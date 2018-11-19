@@ -78,3 +78,16 @@ function camalize(str){
     
     return str;
 };
+
+function makeJson(num){
+    let arr=[];
+    let i = num;
+    while(i) {
+        arr.push({
+            name:`person ${i}`,
+            value:i
+        });
+        i--;
+    }
+    return(arr.length);
+}

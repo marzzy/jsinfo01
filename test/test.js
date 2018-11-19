@@ -1,3 +1,4 @@
+// require('../js/array_test');
 describe("multiplyNumeric", function () {
     it("multiplies all numeric properties by 2", function () {
         let menu = {
@@ -36,5 +37,14 @@ describe("camalize", function () {
 
     it("turns -webkit-transition into WebkitTransition", function () {
         assert.equal(camalize("-webkit-transition"), "WebkitTransition");
+    });
+});
+
+describe('makeJson test', function() {
+    it("log test by 5 ", function() {
+        assert.equal(makeJson(5), 5);
+    });
+    it("log test by 7 ", function() {
+        assert.equal(makeJson(7), 7);
     });
 });
