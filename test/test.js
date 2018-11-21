@@ -48,3 +48,27 @@ describe('makeJson test', function() {
         assert.equal(makeJson(7), 7);
     });
 });
+
+describe('minimum func test', function() {
+    it('test for min(2,5)',function(){
+        assert.equal(min(2, 5), 2);
+    });
+    it('test for min(3,-1)',function(){
+        assert.equal(min(3, -1), -1);
+    });
+    it('test for min(1,1)',function(){
+        assert.equal(min(1, 1), 1);
+    });
+});
+
+describe('x in power n func test', function () {
+    it('test for pow(3, 2)', function () {
+        assert.equal(pow(3, 2), 9);
+    });
+    it('test for pow(3, 3)',function(){
+        assert.equal(pow(3, 3), 27);
+    });
+    it('test for pow(1, 100)',function(){
+        assert.equal(pow(1, 100), 1);
+    });
+});

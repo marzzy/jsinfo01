@@ -91,3 +91,88 @@ function makeJson(num){
     }
     return(arr.length);
 }
+
+// http://javascript.info/function-basics#tasks / test Function min(a, b)
+function min(a, b) {
+    if(a>b){
+        return b;
+    }
+    return a;
+}
+
+// http://javascript.info/function-basics#tasks / test Function pow(x,n)
+
+// P.S.In this task the
+// function should support only natural values of n: integers up from 1
+function pow(x, n) {
+    if ( n == 1 ) {
+        return x;
+    }
+    return x * pow(x, n-1);
+}
+
+// http://javascript.info/function-expressions-arrows / Rewrite with arrow functions
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+
+// ask (
+//     "Do you agree?", 
+//     () => alert("You agreed."),
+//     () => alert("You canceled the execution.")
+// );
+
+
+// http://javascript.info/constructor-new / Create new Accumulator
+// function Accumulator(init) {
+//     this.initvalue = init;
+//     this.read = () => {
+//         this.initvalue += +prompt('how mutch add?',0);
+//     };
+// }
+// let accumulator = new Accumulator(1); // initial value 1
+// accumulator.read(); // adds the user-entered value
+// accumulator.read(); // adds the user-entered value
+// alert(accumulator.initvalue); // shows the sum of these values
+
+
+// http://javascript.info/constructor-new / Create new Calculator
+// function Calculator() {
+//     this.a;
+//     this.b;
+//     this.read = () => {
+//         this.a = +prompt('enter first value', 0);
+//         this.b = +prompt('enter 2nd value', 0);
+//     };
+//     this.sum = () => (this.a+this.b);
+//     this.mul = () => (this.a*this.b);
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+// alert("Sum=" + calculator.sum());
+// alert("Mul=" + calculator.mul());
+
+// http://javascript.info/array#array-operations
+// Create an array styles with items“ Jazz” and“ Blues”.
+// Append“ Rock - n - Roll” to the end.
+// Replace the value in the middle by“ Classics”.Your code
+// for finding the middle value should work
+// for any arrays with odd length.
+// Strip off the first value of the array and show it.
+// Prepend Rap and Reggae to the array.
+let arr01fun = function () {
+    let styles = ['Jazz', 'Blues'];
+    console.log(styles);
+    styles.push("Rock-n-Roll");
+    console.log(styles);
+    styles[((styles.length + 1) / 2)-1] = "Classics";
+    console.log(styles);
+    alert(styles.shift());
+    console.log(styles);
+
+};
+// arr01fun();
+
+
